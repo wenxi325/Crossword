@@ -51,7 +51,7 @@ def calculate_crossword_score(crossword):
         size_ratio = len(crossword[0]) / len(crossword)
     
     # Calculate the overall score using the given formula
-    score = abs(1-size_ratio) * 10 + filled_ratio * 20
+    score = size_ratio * 10 + filled_ratio * 20
     return score
 
 def resize_crossword(crossword):
